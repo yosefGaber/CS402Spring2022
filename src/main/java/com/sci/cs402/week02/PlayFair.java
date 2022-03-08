@@ -55,6 +55,7 @@ public class PlayFair {
       // get row position of ch2 (let I2)
       // get column position of ch2 (let J2)
       // the result should be keyMatrix[I1][J2] appended with keyMatrix[I2][J1]
+      // should handle the letter in the same column or the same row
       return null;
     }
 
