@@ -9,7 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class MonoAlphabeticAttackTest {
 
   @Test
-  public void testScenario1(){
+  public void testScenario1() {
 
     MonoAlphabeticAttack monoAlphabeticAttack = new MonoAlphabeticAttack();
 
@@ -18,21 +18,24 @@ public class MonoAlphabeticAttackTest {
 
     String cipherText = "al fl kfps";
 
-    Assertions.assertEquals(cipherText, "cs is fine");
+    Assertions.assertEquals(
+        monoAlphabeticAttack.attack(plainTextToLearn, cipherTextToLearn, cipherText), "cs is fine");
 
   }
 
   @Test
-  public void testScenario2(){
+  public void testScenario2() {
 
     MonoAlphabeticAttack monoAlphabeticAttack = new MonoAlphabeticAttack();
 
     String plainTextToLearn = "the quick brown fox jumps over the lazy dog";
-    String cipherTextToLearn ="uxr ivlpf megha bgq cvdjk gtre uxr yszw ngo";
+    String cipherTextToLearn = "uxr ivlpf megha bgq cvdjk gtre uxr yszw ngo";
 
     String cipherText = "suuspf xld agh";
 
-    Assertions.assertEquals(cipherText, "attack him now");
+    Assertions.assertEquals(
+        monoAlphabeticAttack.attack(plainTextToLearn, cipherTextToLearn, cipherText),
+        "attack him now");
 
   }
 }
