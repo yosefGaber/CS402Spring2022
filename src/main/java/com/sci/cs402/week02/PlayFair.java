@@ -28,7 +28,7 @@ public class PlayFair {
   }
 
   /**
-   * Playfair key class the manage the initialization of the key matrix and the
+   * Playfair key class that manage the initialization of the key matrix and the
    * encryption/decryption of two letters.
    */
   static class PlayFairKey {
