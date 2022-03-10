@@ -1,4 +1,4 @@
-package com.sci.cs402.week02;
+package com.sci.cs402.week03;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

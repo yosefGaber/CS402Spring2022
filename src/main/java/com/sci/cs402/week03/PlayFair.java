@@ -1,4 +1,4 @@
-package com.sci.cs402.week02;
+package com.sci.cs402.week03;
 
 import java.io.File;
 import java.io.IOException;
