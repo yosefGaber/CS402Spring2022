@@ -83,6 +83,6 @@ public class PlayFairTest {
 
     Assertions.assertEquals(cipherText, playFair.encrypt(plainText));
 
-    Assertions.assertEquals(plainText, playFair.decrypt(playFair.encrypt(plainText)));
+    Assertions.assertEquals(plainText + "x", playFair.decrypt(playFair.encrypt(plainText)));
   }
 }
