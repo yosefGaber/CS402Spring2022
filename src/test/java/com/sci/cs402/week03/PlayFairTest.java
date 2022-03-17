@@ -85,4 +85,19 @@ public class PlayFairTest {
 
     Assertions.assertEquals(plainText + "x", playFair.decrypt(playFair.encrypt(plainText)));
   }
+
+  @Test
+  public void testScenario7() {
+
+    PlayFair playFair = new PlayFair("gravity");
+
+    String plainText = "cryptographyandnetworksecurity";
+    String cipherText = "YVCNBMRAVOFBROYQMEAWVFGMYXAGYB".toLowerCase();
+
+
+    Assertions.assertEquals(cipherText, playFair.encrypt(plainText));
+
+    Assertions.assertEquals(plainText, playFair.decrypt(playFair.encrypt(plainText)));
+
+  }
 }
